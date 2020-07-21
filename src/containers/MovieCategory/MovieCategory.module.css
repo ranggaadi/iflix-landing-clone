@@ -1,0 +1,40 @@
+.MovieCategory {
+    padding: 0 1rem;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    align-items: flex-start;
+}
+
+.MovieCategory__container {
+    display: flex;
+    overflow: hidden;
+    width: 85%;
+}
+
+.MovieCategory__icon {
+    margin-top: .6rem;
+    margin-left: auto;
+    color: #999;
+}
+
+.MovieCategory:hover .MovieCategory__icon{
+    transform: rotate(180deg);
+}
+
+.MovieCategory:hover .MovieCategory__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.MovieCategory__category {
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 500;
+    font-size: .9rem;
+    margin: .8rem 0;
+    margin-right: 1.8rem;
+    white-space: nowrap;
+    text-overflow: "";
+    cursor: pointer;
+}

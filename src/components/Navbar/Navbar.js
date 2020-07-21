@@ -8,7 +8,7 @@ const Navbar = (props) => {
     return (
         <div className={classes.Navbar}>
             <div className={classes.Navbar__img_container}>
-                <img src={props.imageSrc} className={classes.Navbar__img}/>
+                <img src={props.imageSrc} className={classes.Navbar__img} alt="iflix"/>
             </div>
             <div className={classes.Navbar__item}>
                 <NavItem name="home" icon={faHome} />
