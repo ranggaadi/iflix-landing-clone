@@ -3,18 +3,25 @@
     display: flex;
     background: rgba(255, 255, 255, 0.5);
     align-items: flex-start;
+    height: 2.6rem;
+    overflow: hidden;
+}
+
+.MovieCategory:hover {
+    height: unset;
 }
 
 .MovieCategory__container {
     display: flex;
-    overflow: hidden;
-    width: 85%;
+    flex-wrap: wrap;
+    width: 95%;
 }
 
 .MovieCategory__icon {
     margin-top: .6rem;
     margin-left: auto;
     color: #999;
+    transition: all .5s ease;
 }
 
 .MovieCategory:hover .MovieCategory__icon{
