@@ -33,8 +33,8 @@ const MovieCategory = (props) => {
     return (
         <div className={classes.MovieCategory}>
             <div className={classes.MovieCategory__container}>
-                {categories.map(cat => {
-                    return (<p className={classes.MovieCategory__category}>{cat}</p>)
+                {categories.map((cat, idx) => {
+                    return <p key={idx} className={classes.MovieCategory__category}>{cat}</p>
                 })}        
             </div>
             <div className={classes.MovieCategory__icon}>

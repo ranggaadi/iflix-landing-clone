@@ -1,6 +1,6 @@
 .NavItem {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .NavItem:not(:first-of-type) {
