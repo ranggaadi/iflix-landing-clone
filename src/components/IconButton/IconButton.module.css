@@ -1,0 +1,7 @@
+.IconButton {
+    font-size: 1.5rem;
+}
+
+.IconButton:not(:first-of-type) {
+    margin-left: 1.2rem;
+}

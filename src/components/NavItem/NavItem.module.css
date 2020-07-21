@@ -1,0 +1,27 @@
+.NavItem {
+    display: flex;
+    align-items: end;
+}
+
+.NavItem:not(:first-of-type) {
+    margin-left: 1rem;
+}
+
+.NavItem:hover {
+    color: red;
+    
+}
+
+.NavItem__p {
+    margin: 0;
+    margin-bottom: -.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.NavItem__icon {
+    padding: 0 .5rem;
+    font-size: .9rem;
+    box-sizing: unset;
+}
