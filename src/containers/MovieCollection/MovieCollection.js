@@ -8,7 +8,7 @@ const MovieCollection = (props) => {
             <h2 className={classes.MovieCollection__collectionName}>{props.collectionName}</h2>
             <div className={classes.MovieCollection__scrollMenu}>
                 {props.movies.map((movie, idx) => {
-                    return <MovieCard key={idx} imgSrc={movie.imgSrc} title={movie.title}/>
+                    return <MovieCard key={idx} imgSrc={movie.imgSrc} title={movie.title} isLarge={props.lg}/>
                 })}
             </div>
         </div>
