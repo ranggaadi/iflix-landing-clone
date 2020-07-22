@@ -1,0 +1,49 @@
+.SpecialCollection {
+    margin: 3rem;
+    padding: .1rem 0rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(240deg, rgba(42, 42, 46, 0.15) 8%, rgba(42, 42, 46, 0) 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) url("https://iflix-images.akamaized.net/5f128ed0e4b0fa7d6677d6b9_l_row-background?transform=true&v=1&resize[1]=1000") no-repeat scroll center center / cover;
+}
+
+.SpecialCollection__scrollMenu {
+    /* padding-top: rem; */
+    padding-bottom: 2.5rem;
+    white-space: nowrap;
+    overflow: auto;
+    display: table-row;
+}
+
+.SpecialCollection__seeAll {
+    color: #4086e2;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0 2rem;
+    text-transform: uppercase;
+}
+
+.SpecialCollection__test {
+    padding-left: 4rem;
+}
+.SpecialCollection__img {
+    width: 100%;
+}
+
+.SpecialCollection__img_container {
+    border-radius: 8px;
+    display: inline-block;
+    width: 13rem;
+    margin: 0 3rem;
+    /* top: 50%;
+    left: 0; */
+    transform: translateY(-15%);
+}
+
+.SpecialCollection__content {
+    display: flex;
+    align-items: center;
+}
