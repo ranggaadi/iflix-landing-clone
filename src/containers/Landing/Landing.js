@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import MovieCategory from '../MovieCategory/MovieCategory'
 import MovieCollection from '../MovieCollection/MovieCollection'
 import SpecialCollection from '../SpecialCollection/SpecialCollection'
+import Footer from '../Footer/Footer'
 import classes from './Landing.module.css'
 
 const Landing = () => {
@@ -211,6 +212,7 @@ const Landing = () => {
             <MovieCollection collectionName="Recommended For You" movies={recommended}/>
             <MovieCollection collectionName="Sinema Indonesia" movies={recommendedLg} lg={true}/>
             <SpecialCollection movies={special.movies} imgSrc={special.img} bgImg={special.backgroundImg} categoryName={special.specialCategory}/>
+            <Footer />
         </div>
     )
 }

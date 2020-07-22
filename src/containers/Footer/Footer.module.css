@@ -1,0 +1,124 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F7;
+}
+
+.Inner__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo__container {
+    margin-top: 1.5rem;
+}
+
+.Footer__flex {
+    width: 35rem;
+    display: flex;
+    /* background-color: red;    */
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.Footer__content {
+    color: #A4A4A6;
+    font-size: .75rem;
+}
+
+.Footer__content p:hover {
+    color: #1DA1F3;
+}
+
+.Footer__content p:first-of-type {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Footer__content p:first-of-type:hover {
+    color: #A4A4A6;
+}
+
+.Footer__social {
+    margin-top: 3rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Footer__orb{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: #A4A4A6;
+    background-color: #E3E3EA;
+}
+
+.Footer__orb:hover .Footer__icon{
+    color: #fff;
+}
+
+.Footer__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+}
+
+.Footer__copy {
+    color: #A4A4A6;
+    margin-top: 2rem;
+    font-size: .7rem;
+}
+
+
+
+
+
+
+
+
+
+.Footer__instagram{
+    transition: all .5s ease; 
+}
+
+.Footer__instagram:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.Footer__twitter{
+    transition: all .5s ease; 
+}
+
+.Footer__twitter:hover{
+    background: #1DA1F3 
+}
+
+.Footer__facebook{
+    transition: all .5s ease; 
+}
+
+.Footer__facebook:hover{
+    background: #3B5998 
+}
+
+.Footer__messenger{
+    transition: all .5s ease; 
+}
+
+.Footer__messenger:hover{
+    background: #2174EE 
+}
+
+.Footer__yt{
+    transition: all .5s ease; 
+}
+
+.Footer__yt:hover{
+    background: #EE3323
+}
