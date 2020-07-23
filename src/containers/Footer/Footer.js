@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className={classes.Footer}> 
             <div className={classes.Inner__container}>
                 <div className={classes.Logo__container}>
-                    <img src="https://iflix-images.akamaized.net/web/logos/logo-tagline.svg"/>
+                    <img src="https://iflix-images.akamaized.net/web/logos/logo-tagline.svg" alt="ifilix logo"/>
                 </div>
                 <div className={classes.Footer__flex}>
                     <div className={classes.Footer__content}>

@@ -1,0 +1,57 @@
+.CarouselItem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 80vh;
+}
+
+.Image_container{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Image {
+    width: 100%;
+    transform: translateY(-5.5rem);
+}
+
+.Overlay {
+    position: absolute;
+    left: calc(45% - .5rem);
+    bottom: 15%;
+}
+
+.PlayBtn {
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: #e21c22;
+    text-transform: uppercase;
+    color: white;
+    transition: all .5s ease;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.PlayBtn:hover {
+    background-color: #C61017;
+}
+
+.PlayIcon {
+    margin-right: .7rem;
+}
+
+.TrailerBtn {
+    color: white;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.TrailerIcon {
+    font-size: 2rem;
+}

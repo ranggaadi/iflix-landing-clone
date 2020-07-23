@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import Carousel from '../../components/Carousel/Carousel'
 import MovieCategory from '../MovieCategory/MovieCategory'
 import MovieCollection from '../MovieCollection/MovieCollection'
 import SpecialCollection from '../SpecialCollection/SpecialCollection'
@@ -209,6 +210,7 @@ const Landing = () => {
         <div className={classes.Landing}>
             <Navbar imageSrc="https://iflix-images.akamaized.net/web/logos/visitor-light.svg?v=1#svgView(preserveAspectRatio(xMidYMid meet)"/>
             <MovieCategory />
+            <Carousel />
             <MovieCollection collectionName="Recommended For You" movies={recommended}/>
             <MovieCollection collectionName="Sinema Indonesia" movies={recommendedLg} lg={true}/>
             <SpecialCollection movies={special.movies} imgSrc={special.img} bgImg={special.backgroundImg} categoryName={special.specialCategory}/>

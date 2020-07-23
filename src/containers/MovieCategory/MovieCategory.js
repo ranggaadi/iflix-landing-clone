@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import classes from './MovieCategory.module.css';
 import IconButton from '../../components/IconButton/IconButton'
 import { faAngleDown} from "@fortawesome/free-solid-svg-icons"
+import cx from 'classnames'
 
 
-const MovieCategory = (props) => {
+const MovieCategory = () => {
+    const [isScrolled, setScrolled] = useState(false);
+
+    const handleScrolled = () => {
+        setScrolled(window.scrollY > 50.95)
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScrolled)
+    })
+
     const categories = [
         'home',
         'tv',
@@ -29,9 +40,8 @@ const MovieCategory = (props) => {
         'snacks'
     ]
 
-
     return (
-        <div className={classes.MovieCategory}>
+        <div className={isScrolled ? cx(classes.MovieCategory, classes.Scrolled) : classes.MovieCategory}>
             <div className={classes.MovieCategory__container}>
                 {categories.map((cat, idx) => {
                     return <p key={idx} className={classes.MovieCategory__category}>{cat}</p>
