@@ -12,7 +12,7 @@ const Carousel = () => {
         infinite: true,
         speed: 500,
         dotsClass: classes.Dots,
-        autoplaySpeed: 600000,
+        autoplaySpeed: 3500,
         autoplay:true,
         slidesToShow: 1,
         slidesToScroll: 1,

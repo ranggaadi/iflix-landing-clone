@@ -9,6 +9,7 @@ const CarouselItem = (props) => {
             <div className={classes.Image_container}>
                 <img src={props.imgSrc} className={classes.Image} alt="carousel-img"/>
             </div>
+            <div className={classes.Shadow}></div>
             <div className={classes.Overlay}>
                 <button className={classes.PlayBtn}>
                     <FontAwesomeIcon icon={faPlay} className={classes.PlayIcon}/>

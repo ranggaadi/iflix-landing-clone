@@ -208,13 +208,19 @@ const Landing = () => {
 
     return (
         <div className={classes.Landing}>
-            <Navbar imageSrc="https://iflix-images.akamaized.net/web/logos/visitor-light.svg?v=1#svgView(preserveAspectRatio(xMidYMid meet)"/>
-            <MovieCategory />
-            <Carousel />
-            <MovieCollection collectionName="Recommended For You" movies={recommended}/>
-            <MovieCollection collectionName="Sinema Indonesia" movies={recommendedLg} lg={true}/>
-            <SpecialCollection movies={special.movies} imgSrc={special.img} bgImg={special.backgroundImg} categoryName={special.specialCategory}/>
-            <Footer />
+            <div>
+                <Navbar imageSrc="https://iflix-images.akamaized.net/web/logos/visitor-light.svg?v=1#svgView(preserveAspectRatio(xMidYMid meet)"/>
+                <MovieCategory />
+            </div>
+            <div className={classes.Content}>
+                <Carousel />
+                <MovieCollection collectionName="Recommended For You" movies={recommended}/>
+                <MovieCollection collectionName="Sinema Indonesia" movies={recommendedLg} lg={true}/>
+                <SpecialCollection movies={special.movies} imgSrc={special.img} bgImg={special.backgroundImg} categoryName={special.specialCategory}/>
+            </div>
+            <div>
+                <Footer />
+            </div>
         </div>
     )
 }

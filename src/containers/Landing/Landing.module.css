@@ -1,0 +1,8 @@
+.Landing {
+    display: flex;
+    flex-direction: column;
+}
+
+.Content {
+    min-height: calc(100vh - 50.95px - 432px);
+}
